@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>задачи</title>
+</head>
+<body>
+    <script>
+        /*Известны объем и масса тела. Определить плотность материала этого тела.*/
+    // let weight, volume, density;
+    // weight = parseInt(prompt("введите массу"));
+    // volume = parseInt(prompt("введите объём"));
+    // density = Math.ceil(weight / volume);
+    // alert("плотность = " + density);
+
+    /* С начала суток прошло n секунд. Определить: сколько полных минут прошло с начала очередного часа*/
+    // let n, min;
+    // n = parseInt(prompt("введите кол-во минут", 1));
+    // min = (n % 3600) / 60;
+    // alert("c начала очередного часа прошло" + min + "минут");
+
+    /*Дано трехзначное число. Найти число, полученное при прочтении его цифр справа налево.*/
+    let number, d1, d2, d3;
+    number = parseInt(prompt("введите 3ёх значное число"));
+    d1 = String(number % 10);
+    d2 = String(Math.floor(number / 10) % 10); 
+    d3 = String(Math.floor(number / 100) % 10);
+    alert(d1+d2+d3);
+    </script>
+</body>
+</html>
